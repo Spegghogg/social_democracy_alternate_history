@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "National Democracy: An Alternate History" + '_' + "TheSpegghogg";
+  var TITLE = "National Democracy: A Social Democracy Mod" + '_' + "TheSpegghogg";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
