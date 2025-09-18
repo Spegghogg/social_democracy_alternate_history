@@ -74,7 +74,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="People's Freedom and Justice Party">PFJP</span>!}: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="National Front Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ ddp_relation : relationships +]
 
 {!<span class="tooltip-text" title="Bludish Freedom Party">BFP</span>!}: [+ dvp_relation : relationships +]
 
@@ -158,7 +158,7 @@ USP: [+ spd_votes +]%
 
 PFJP: [+ z_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+NFP: [+ ddp_votes +]%
 
 BFP: [+ kpd_votes +]%
 
@@ -170,16 +170,16 @@ Independents: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: USP: [+ workers_spd_display +]%, PFJP: [+ workers_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, BFP: [+ workers_kpd_display +]%, [? if wpb_formed: WPB: [+ workers_dvp_display +]% ?], [? if cps_formed: CPS: [+ workers_dnvp_display +]% ?], Independents: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: USP: [+ workers_spd_display +]%, PFJP: [+ workers_z_display +]%, NFP: [+ workers_ddp_display +]%, BFP: [+ workers_kpd_display +]%, [? if wpb_formed: WPB: [+ workers_dvp_display +]% ?], [? if cps_formed: CPS: [+ workers_dnvp_display +]% ?], Independents: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-Middle Class: USP: [+ new_middle_spd_display +]%, PFJP: [+ new_middle_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, BFP: [+ new_middle_kpd_display +]%, [? if wpb_formed: WPB: [+ new_middle_dvp_display +]% ?], [? if cps_formed: CPS: [+ new_middle_dnvp_display +]% ?], Independents: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Middle Class: USP: [+ new_middle_spd_display +]%, PFJP: [+ new_middle_z_display +]%, NFP: [+ new_middle_ddp_display +]%, BFP: [+ new_middle_kpd_display +]%, [? if wpb_formed: WPB: [+ new_middle_dvp_display +]% ?], [? if cps_formed: CPS: [+ new_middle_dnvp_display +]% ?], Independents: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Upper Class: USP: [+ old_middle_spd_display +]%, PFJP: [+ old_middle_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, BFP: [+ old_middle_kpd_display +]%, [? if wpb_formed: WPB: [+ old_middle_dvp_display +]% ?], [? if cps_formed: CPS: [+ old_middle_dnvp_display +]% ?], Independents: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Upper Class: USP: [+ old_middle_spd_display +]%, PFJP: [+ old_middle_z_display +]%, NFP: [+ old_middle_ddp_display +]%, BFP: [+ old_middle_kpd_display +]%, [? if wpb_formed: WPB: [+ old_middle_dvp_display +]% ?], [? if cps_formed: CPS: [+ old_middle_dnvp_display +]% ?], Independents: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Rural: USP: [+ rural_spd_display +]%, PFJP: [+ rural_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, BFP: [+ rural_kpd_display +]%, [? if wpb_formed: WPB: [+ rural_dvp_display +]% ?], [? if cps_formed: CPS: [+ rural_dnvp_display +]% ?], Independents: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural: USP: [+ rural_spd_display +]%, PFJP: [+ rural_z_display +]%, NFP: [+ rural_ddp_display +]%, BFP: [+ rural_kpd_display +]%, [? if wpb_formed: WPB: [+ rural_dvp_display +]% ?], [? if cps_formed: CPS: [+ rural_dnvp_display +]% ?], Independents: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
-Bluds: USP: [+ unemployed_spd_display +]%, PFJP: [+ unemployed_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, BFP: [+ unemployed_kpd_display +]%, [? if wpb_formed: WPB: [+ unemployed_dvp_display +]% ?], [? if cps_formed: CPS: [+ unemployed_dnvp_display +]% ?], Independents: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Bluds: USP: [+ unemployed_spd_display +]%, PFJP: [+ unemployed_z_display +]%, NFP: [+ unemployed_ddp_display +]%, BFP: [+ unemployed_kpd_display +]%, [? if wpb_formed: WPB: [+ unemployed_dvp_display +]% ?], [? if cps_formed: CPS: [+ unemployed_dnvp_display +]% ?], Independents: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Nurists: USP: [+ catholics_spd_display +]%, PFJP: [+ catholics_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, BFP: [+ catholics_kpd_display +]%, [? if wpb_formed: WPB: [+ catholics_dvp_display +]% ?], [? if cps_formed: CPS: [+ catholics_dnvp_display +]% ?], Independents: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Nurists: USP: [+ catholics_spd_display +]%, PFJP: [+ catholics_z_display +]%, NFP: [+ catholics_ddp_display +]%, BFP: [+ catholics_kpd_display +]%, [? if wpb_formed: WPB: [+ catholics_dvp_display +]% ?], [? if cps_formed: CPS: [+ catholics_dnvp_display +]% ?], Independents: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 Support for Sollism: [+ pro_republic_disp +]%
