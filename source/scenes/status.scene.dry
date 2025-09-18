@@ -121,11 +121,11 @@ Young Sords Militarization: [+ rb_militancy : militancy +]
 
 Red Youth Militarization: [+ rfb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The BFF is a Bludish Terrorist Organisation associated with the Soll Dam Uprising.">BFF</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="Bludish Freedom Front">BFF</span>!} Strength: [+ sh_strength_2 +] thousand
 
 BFF Militarization: [+ sh_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Black Battalion is a radical ultranationalist paramilitary originating in Jen.">BB</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="Black Battalion">BB</span>!} Strength: [+ sa_strength_2 +] thousand
 
 BB Militarization: [+ sa_militancy : militancy +]
 
