@@ -15,7 +15,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @new_middle: The middle class, white-collar workers.
 - @old_middle: The upper class, who usually vote for the PFJP.
 - @rural: Rural workers and farmers.
-- @unemployed: The unemployed.
+- @unemployed: The Bluds, who have been against us since the Izzam Incident.
 - @catholics: Religious Dastnurists.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
@@ -56,9 +56,9 @@ We have increased our campaigning among farmers. [? if peoples_party == 0: We ha
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: unemployed_spd += 6*(1-dissent); resources -= 1; unemployed_spd -= 3 if welfare < 0; unemployed_spd += 6*(1-dissent) if wtb_adopted = 1; unemployed_spd += 3*(1-dissent) if welfare >= 2;
+on-arrival: unemployed_spd += 5*(1-dissent); resources -= 1; unemployed_spd -= 3 if nationalism < 10;
 
-We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
+We have increased our campaigning among the Bluds. [? if nationalism <= 10: Unsurprisingly, this isn't received well. ?]
 
 @catholics
 subtitle: -1 resources
@@ -67,4 +67,4 @@ unavailable-subtitle: Not enough resources.
 view-if: peoples_party == 1
 on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 
-We have increased our campaigning among Dastnurists.
+We have increased our campaigning among Nurists.
