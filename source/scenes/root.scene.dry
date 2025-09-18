@@ -329,7 +329,7 @@ Q.economic_records = [];
 
 // State of the government
 Q.president = "Soll";
-// starting chancellor: Hermann Müller
+// starting chancellor: Soll
 Q.chancellor = "Soll";
 Q.chancellor_party = 'USP';
 Q.spd_in_government = 1;
