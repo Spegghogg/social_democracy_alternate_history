@@ -10,26 +10,26 @@ max-visits: 3
 
 = Questions of Ideology
 
-The SPD is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The USP is a catch-all party of many different ideological currents. What should be our primary ideological guidance for now?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @class_struggle: The Three Fundmanetal Principles of Sollism, The Constitution, The State and the Sordish People.
+- @centrist: An emphasis on the importance of democratic freedoms, while not compromising social order.
+- @labor: We should prioritise Democracy, Political Freedoms, and the Republic's integrity beyond anything else.
+- @reform: Democracy must not get in the way of the workings of the state, democratic freedoms will be deemphasised.
 - @easy_discard
 
 @class_struggle
 on-arrival: {!
-if (Q.ideology && Q.ideology != "left") {
+if (Q.ideology && Q.ideology != "conservative") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "conservative"; left_strength += 10; left_dissent -= 5; z_relation -= 5; ddp_relation -= 3
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The Mainstream Sollist movement is pleased with the party's opposition to reforms.
 
 @centrist
 on-arrival: {!
@@ -38,31 +38,31 @@ if (Q.ideology && Q.ideology != "centrist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent += 2; reformist_dissent -= 5
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+Alignment with the Centrists marks a big change in the party, one which will have drastic consequences.
 
 @labor
-on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
-    Q.changed = 1;
-}
-!}
-go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
-
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
-
-@reform
 on-arrival: {!
 if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "reformist"; labor_strength += 10; labor_dissent -= 5; z_relation += 10; ddp_relation -= 5; left_dissent += 10
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The reformists in the party support reforming the system to improve democratic freedoms and reducing corruption, while avoiding a complete abandonment of Sollism.
+
+@reform
+on-arrival: {!
+if (Q.ideology && Q.ideology != "radical sollist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "radical sollist"; reformist_strength += 10; reformist_dissent -= 5; z_relation -= 10; ddp_relation += 5; labor_dissent -= 10; left_dissent += 3
+
+The Old Guard seeks to restrict democratic freedoms, and sees a priority in preserving the statist and nationalistic principles of Sollist Ideology.
 
 @changed
 on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
