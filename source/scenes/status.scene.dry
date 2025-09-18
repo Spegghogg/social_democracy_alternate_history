@@ -170,7 +170,7 @@ Independents: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: USP: [+ workers_spd_display +]%, PFJP: [+ workers_z_display +]%, NFP: [+ workers_ddp_display +]%, BFP: [+ workers_kpd_display +]%, [? if wpb_formed: WPB: [+ workers_dvp_display +]% ?], [? if cps_formed: CPS: [+ workers_dnvp_display +]% ?], Independents: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Lower Class: USP: [+ workers_spd_display +]%, PFJP: [+ workers_z_display +]%, NFP: [+ workers_ddp_display +]%, BFP: [+ workers_kpd_display +]%, [? if wpb_formed: WPB: [+ workers_dvp_display +]% ?], [? if cps_formed: CPS: [+ workers_dnvp_display +]% ?], Independents: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
 Middle Class: USP: [+ new_middle_spd_display +]%, PFJP: [+ new_middle_z_display +]%, NFP: [+ new_middle_ddp_display +]%, BFP: [+ new_middle_kpd_display +]%, [? if wpb_formed: WPB: [+ new_middle_dvp_display +]% ?], [? if cps_formed: CPS: [+ new_middle_dnvp_display +]% ?], Independents: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
