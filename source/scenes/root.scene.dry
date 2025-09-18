@@ -45,16 +45,18 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['conservative', 'center', 'reformist', 'old_guard'];
+Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
 // should this be normalized to 100%?
-Q.conservative_strength = 30;
-Q.conservative_dissent = 0;
+Q.left_strength = 30;
+Q.left_dissent = 0;
 Q.center_strength = 10;
 Q.center_dissent = 0;
-Q.reformist_strength = 5;
-Q.reformist_dissent = 20;
-Q.old_guard_strength = 20;
-Q.old_guard_dissetn = 5;
+Q.labor_strength = 5;
+Q.labor_dissent = 20;
+Q.reformist_strength = 20;
+Q.reformist_dissent = 5;
+Q.neorevisionist_strength = 5;
+Q.neorevisionist_dissent = 10;
 
 // secret events...
 Q.unions_independent = 0;
@@ -62,6 +64,13 @@ Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
 
+// have we discovered neorevisionism?
+Q.neorevisionism = 0;
+
+Q.left_name = "Conservative";
+Q.center_name = "Centrist";
+Q.labor_name = "Reformist";
+Q.reformist_name = "Old Guard";
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
@@ -164,8 +173,6 @@ Q.nationalism = 60;
 Q.socialism = 30;
 // pro-republic vs anti-republic
 Q.pro_republic = 62;
-
-Q.pro_republic_name = "Support for Sollism"
 
 Q.emergency_rule = 0;
 
@@ -316,7 +323,9 @@ Q.old_sapd_r = 0;
 
 // for changing the DDP's name to the DStP
 Q.ddp_name = "NFP";
+
 Q.z_name = "PFJP";
+
 Q.spd_name = "USP";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
