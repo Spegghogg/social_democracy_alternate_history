@@ -204,7 +204,7 @@ Q.old_middle = 13; // "old mittelstand"
 Q.new_middle = 14; // "new mittelstand"
 Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
+Q.unemployed = 9.6;
 Q.catholics = 30;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
@@ -234,6 +234,8 @@ Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
+Q.wpb_formed = 0;
+Q.cps_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -273,14 +275,14 @@ Q.rural_dnvp = 0;
 Q.rural_nsdap = 0;
 Q.rural_other = 10;
 
-Q.unemployed_spd = 20;
+Q.unemployed_spd = 2;
 Q.unemployed_kpd = 0;
-Q.unemployed_z = 20;
-Q.unemployed_ddp = 10;
+Q.unemployed_z = 15;
+Q.unemployed_ddp = 0;
 Q.unemployed_dvp = 0;
 Q.unemployed_dnvp = 0;
 Q.unemployed_nsdap = 0;
-Q.unemployed_other = 9;
+Q.unemployed_other = 70;
 
 Q.catholics_spd = 55;
 Q.catholics_kpd = 0;
