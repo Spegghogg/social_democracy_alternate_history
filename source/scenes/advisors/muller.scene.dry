@@ -8,7 +8,7 @@ view-if: muller_advisor = 1
 = Tarquin Soll
 
 
-Colonel Soll is the founder of the USP, the [? if chancellor = "Müller": former ?] President, a long time Conservative Leader and National Hero.
+Colonel Soll is the founder of the USP, the [? if chancellor != "Soll": former ?] President, a long time Conservative Leader and National Hero.
 
 - @coalition
 - @toleration
