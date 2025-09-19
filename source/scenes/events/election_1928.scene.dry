@@ -1,4 +1,4 @@
-title: Reichstag Elections
+title: Assembly Elections
 new-page: true
 tags: event
 priority: -1
@@ -184,12 +184,14 @@ Q.election_records.push(election_result);
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
-    {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
-        "seats": Math.round(Q.kpd_r*5),
-    }
+if (Q.wpb_formed) {
+    data.push({
+            "id": "kpd",
+            "legend": "WPB",
+            "name": "WPB",
+            "seats": Math.round(Q.kpd_r*5),
+            });
+}
 ];
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
@@ -202,52 +204,42 @@ if (Q.sapd_formed && Q.sapd_r) {
 data = data.concat([
     {
         "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
+        "legend": "USP",
+        "name": "USP",
         "seats": Math.round(Q.spd_r*5),
     },
     {
         "id": "ddp",
-        "legend": Q.ddp_name,
-        "name": Q.ddp_name,
+        "legend": "NFP",
+        "name": "NFP",
         "seats": Math.round(Q.ddp_r*5),
     },
     {
         "id": "z",
-        "legend": "Center",
-        "name": "Center",
-        "seats": Math.round((Q.z_r - 3)*5),
-    },
-    {
-        "id": "bvp",
-        "legend": "BVP",
-        "name": "BVP",
-        "seats": Math.round(3*5),
+        "legend": "PFJP",
+        "name": "PFJP",
+        "seats": Math.round((Q.z_r*5),
     },
     {
         "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
+        "legend": "BFP",
+        "name": "BFP",
         "seats": Math.round(Q.dvp_r*5),
     },
     {
         "id": "other",
-        "legend": "Other",
-        "name": "Other",
+        "legend": "Independents",
+        "name": "Independents",
         "seats": Math.round(Q.other_r*5),
     },
-    {
-        "id": "dnvp",
-        "legend": "DNVP",
-        "name": "DNVP",
-        "seats": Math.round(Q.dnvp_r*5),
-    },
-    {
-        "id": "nsdap",
-        "legend": "NSDAP",
-        "name": "NSDAP",
-        "seats": Math.round(Q.nsdap_r*5),
-    },
+if (Q.cps_formed) {
+    data.push({
+            "id": "dnvp",
+            "legend": "CPS",
+            "name": "CPS",
+            "seats": Math.round(Q.dnvp_r*5),
+            });
+},
 ]);
 
 if (window && d3) {
