@@ -264,7 +264,7 @@ go-to: coalition_menu
 
 <svg id="reichstag" style="width: 500px; height: 250px;"> </svg>
 
-{!<table>!} 
+<table> 
 
 {!<tr><td>Party</td><td>Vote share</td><td>Change</td></tr>!}
 
