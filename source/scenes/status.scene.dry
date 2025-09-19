@@ -49,7 +49,7 @@ GNA composition:
 # 1928: 3, 1930: 18
 [? if cps_formed: {!<span class="tooltip-text" title="Communist Party of Sordland">CPS</span>!}: [+ dnvp_r +]% ?]
 # 1928: 9, 1930: 10
-Others: [+ other_r +]%
+Independents: [+ other_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
